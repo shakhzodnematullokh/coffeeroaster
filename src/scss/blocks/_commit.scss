@@ -1,0 +1,23 @@
+.commit__wrapper {
+    max-width: 1110px;
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.commit__img {
+    border-radius: 8px;
+}
+
+.commit__title {
+    @include title;
+    color: #333d4b;
+    margin-bottom: 32px;
+}
+
+.commit__text {
+    color: #333d4b;
+    max-width: 540px;
+}

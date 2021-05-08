@@ -1,0 +1,79 @@
+.office__container {
+    padding-left: 117px;
+    margin-bottom: 168px;
+}
+
+.office__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 170px;
+    color: #83888F;
+    font-family: 'Fraunces 9pt';
+}
+
+.office__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    list-style: none;
+}
+
+.office__item {
+    margin-right: 95px;
+    width: 285px;
+    position: relative;
+}
+
+.office__item-title {
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+    font-family: 'Fraunces 9pt';
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.office__item:last-child {
+    margin-right: 0;
+}
+
+.inform-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.inform-item {
+    @include text;
+    color: #333D4B;
+}
+
+.office__item--uk::before {
+    content: '';
+    width: 41px;
+    height: 49px;
+    background: url(/img/uk.svg) no-repeat center center;
+    position: absolute;
+    top: -85px;
+}
+
+.office__item--ca::before {
+    content: '';
+    width: 52px;
+    height: 50px;
+    background: url(/img/canada.svg) no-repeat center center;
+    position: absolute;
+    top: -83px;
+}
+
+.office__item--aus::before {
+    content: '';
+    width: 49px;
+    height: 44px;
+    background: url(/img/australia.svg) no-repeat center center;
+    position: absolute;
+    top: -80px;
+}
+

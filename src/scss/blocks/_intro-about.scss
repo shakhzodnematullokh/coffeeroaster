@@ -1,0 +1,47 @@
+.intro-about__container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.intro-about {
+    margin-top: 118px;
+    margin-bottom: 168px;
+}
+
+.wrapper-about {
+    background-image: url(/img/intro_about.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+    padding-top: 137px;
+    padding-bottom: 137px;
+    padding-left: 85px;
+    display: flex;
+    align-items: center;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .wrapper-about {
+      background-image: url(/img/intro_about@2x.png);
+  }
+
+}
+
+.content__title {
+    @include title;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.content__text {
+    @include text;
+    max-width: 445px;
+    color: white;
+}

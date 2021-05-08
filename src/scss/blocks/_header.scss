@@ -1,0 +1,89 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+    background-color: white;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 44px;
+    padding-bottom: 44px;
+}
+
+.header__logo {
+    display: inline-block;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 282px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__link {
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    color: #83888F;
+    font-size: 12px;
+    font-weight: bold;
+
+    &:hover {
+        color: rgba(51, 61, 75, 1);
+    }
+}
+
+@media screen and (max-width: 689px) {
+    .header__container {
+        padding-top: 32px;
+        padding-bottom: 40px;
+    }
+
+    .header__logo-img {
+        max-width: 163px;
+        margin-left: 24px;
+    }
+
+    .header__nav {
+        display: none;
+        background: linear-gradient(0deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+        height: calc(100vh - 90px);
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        z-index: 3;
+    }
+
+    .header__nav--active {
+        display: block;
+    }
+
+    .nav__list {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .nav__link {
+        text-transform: none;
+        font-size: 24px;
+        line-height: 32px;
+        font-family: 'Fraunces 9pt';
+        margin-bottom: 32px;
+        color: #333D4B;
+    }
+
+    .nav__item:last-child {
+        margin-bottom: 0;
+    }
+}

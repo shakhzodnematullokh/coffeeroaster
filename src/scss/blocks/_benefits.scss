@@ -1,0 +1,364 @@
+.benefits__container {
+    margin: 0;
+    padding: 0 85px;
+    position: relative;
+    z-index: 2;
+
+        &::before {
+            content: '';
+            width: 1280px;
+            height: 577px;
+            background-color: #2C343E;
+            border-radius: 10px;
+            background-position: center;
+            top: -100px;
+            left: 0;
+            position: absolute;
+            z-index: 0;
+        }
+}
+
+.benefits__title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 32px;
+    font-size: 40px;
+    line-height: 48px;
+    color: white;
+    position: relative;
+    z-index: 2;
+    font-family: 'Fraunces 9pt';
+    text-align: center;
+}
+
+.benefits__text {
+    padding: 0;
+    margin: 0;
+    display: block;
+    margin: 0 auto;
+    width: 540px;
+    color: white;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 86px;
+    position: relative;
+    z-index: 1;
+}
+
+.benefits__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.benefits__item {
+    background-color: $accent-color;
+    max-width: 350px;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 48px;
+    padding-right: 47px;
+    padding-left: 48px;
+    position: relative;
+
+    &::before {
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 72px;
+        left: 136px;
+    }
+}
+
+.benefits__item--coffee::before {
+    content: '';
+    width: 71px;
+    height: 72px;
+    display: block;
+    background-image: url(/img/coffee.png);
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+
+    .benefits__item--coffee::before {
+        content: '';
+        background-size: contain;
+        background-image: url(/img/coffee@2x.png);
+        
+}
+
+}
+
+.benefits__item--gift::before {
+    content: '';
+    width: 72px;
+    height: 72px;
+    background-image: url(/img/gift.png);
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    
+    .benefits__item--gift::before {
+        content: '';
+        background-image: url(/img/gift@2x.png);
+        background-size: contain;
+    }
+
+}
+
+.benefits__item--car::before {
+    content: '';
+    width: 72px;
+    height: 50px;
+    background-image: url(/img/car.png);
+    top: 83px;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+
+  .benefits__item--car::before {
+    content: '';
+    background-image: url(/img/car@2x.png);
+    background-size: contain;
+}
+
+}
+
+.benefits__item-title {
+    color: white;
+    font-size: 24px;
+    font-family: 'Fraunces 9pt';
+    padding: 0;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.benefits__item-text {
+    font-size: 16px;
+    line-height: 26px;
+    color: white;
+    width: 255px;
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1280px) {
+    .benefits__container {
+        max-width: 710px;
+        padding: 0 40px;
+
+        &::before {
+            max-width: 710px;
+            max-height: 573px;
+            background-position: center;
+            top: -56px;
+            left: 40px;
+            position: absolute;
+            z-index: 0;
+        }
+    }
+
+    .benefits__title {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .benefits__text {
+        max-width: 540px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .benefits__list {
+        flex-direction: column;
+    }
+
+    .benefits__item {
+        display: block;
+        max-width: 573px;
+        max-height: 180px;
+        text-align: left;
+        padding: 41px 70px 48px;
+        margin: 0 58px;
+        margin-bottom: 24px;
+
+        &::before {
+            display: block;
+            flex-shrink: 2;
+        }
+    }
+
+    .benefits__item-box {
+        display: block;
+        margin-left: 115px;
+        max-width: 344px;
+        max-height: 98px;
+    }
+
+    .benefits__item-title {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .benefits__item-text {
+        font-size: 15px;
+        width: 344px;
+        line-height: 25px;
+    }
+
+    .benefits__item--coffee {
+        display: flex;
+        align-items: center;
+
+        &::before {
+            width: 55px;
+            height: 56px;
+            background-position: center;
+            background-size: cover;
+            top: 60px;
+            left: 80px;
+        }
+    }
+
+    .benefits__item--gift {
+        display: flex;
+        align-items: center;
+
+        &::before {
+            width: 55px;
+            height: 56px;
+            background-position: center;
+            background-size: cover;
+            top: 60px;
+            left: 80px;
+        }
+    }
+
+    .benefits__item--car {
+        display: flex;
+        align-items: center;
+
+        &::before {
+            width: 55px;
+            height: 56px;
+            background-position: center;
+            background-size: contain;
+            top: 60px;
+            left: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 689px) {
+    .benefits__container {
+        max-width: 327px;
+        padding: 0 24px;
+
+        &::before {
+            max-width: 327px;
+            min-height: 902px;
+            background-position: center;
+            top: -64px;
+            left: 24px;
+            position: absolute;
+            z-index: 0;
+        }
+    }
+
+    .benefits__title {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .benefits__text {
+        max-width: 279px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .benefits__item {
+        display: flex;
+        flex-direction: column;
+        max-width: 279px;
+        max-height: 382px;
+        text-align: left;
+        padding: 200px 12px 51px;
+        margin: 0 58px;
+        margin-bottom: 24px;
+
+        &::before {
+            display: block;
+            flex-shrink: 2;
+        }
+    }
+
+    .benefits__item-title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+
+    .benefits__item-text {
+        font-size: 16px;
+        width: 212px;
+        line-height: 26px;
+        text-align: center;
+    }
+
+    .benefits__item-box {
+        text-align: center;
+        margin: 0 auto;
+        max-height: 131px;
+    }
+
+    .benefits__item--coffee::before {
+        width: 72px;
+        height: 72px;
+        background-position: center;
+        background-size: cover;
+        top: 72px;
+        left: (207px / 2);
+    }
+
+    .benefits__item--gift::before {
+        width: 72px;
+        height: 72px;
+        background-position: center;
+        background-size: cover;
+        top: 72px;
+        left: (207px / 2);
+    }
+
+    .benefits__item--car::before {
+        width: 72px;
+        height: 72px;
+        background-position: center;
+        background-size: contain;
+        top: 72px;
+        left: (207px / 2);
+    }
+    
+}

@@ -1,0 +1,157 @@
+.intro {
+    margin-top: 118px;
+}
+
+.wrapper {
+    background-image: url(/img/intro-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 117px;
+    padding-bottom: 116px;
+    padding-left: 85px;
+    display: flex;
+    align-items: center;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .wrapper {
+      background-image: url(/img/intro@2x.png);
+  }
+
+}
+
+.intro__title {
+    font-size: 72px;
+    line-height: 72px;
+    color: white;
+    width: 493px;
+    font-family: "Fraunces 9pt";
+    margin: 0;
+    padding: 0;
+}
+
+.intro__text {
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Barlow";
+    color: white;
+    width: 445px;
+    margin: 0;
+    margin-top: 32px;
+    margin-bottom: 56px;
+}
+
+
+.intro__link {
+    @include link;
+
+    &:hover {
+        background-color: rgba(102, 210, 207, 1);
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .intro {
+        margin-top: 118px;
+    }
+
+    .wrapper {
+        margin: 0 auto;
+        max-width: 710px;
+        background-image: url(/img/intro_tablet.png);
+        // background-size: cover;
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+    
+        .wrapper {
+            background-image: url(/img/intro_tablet@2x.png);
+        }
+
+}
+
+    .intro__box {
+        max-width: 398px;
+    }
+
+    .intro__title {
+        font-size: 48px;
+        line-height: 48px;
+        max-width: 329px;
+    }
+
+    .intro__text {
+        font-size: 15px;
+        line-height: 25px;
+        max-width: 398px;
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 689px) {
+    .intro {
+        margin-top: 95px;
+    }
+
+    .wrapper {
+        display: block;
+        max-width: 327px + 48px;
+        background-image: url(/img/intro_mobil.jpg);
+        // background-size: cover;
+        padding: 0;
+        margin: 0 16px;
+        padding: 100px 24px;
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+    
+        .wrapper {
+            background-image: url(/img/intro_mobil2x.jpg);
+        }
+
+}
+
+    .intro__title {
+        font-size: 40px;
+        line-height: 40px;
+        max-width: 279px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .intro__text {
+        font-size: 15px;
+        line-height: 25px;
+        max-width: 279px;
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 39px;
+    }
+
+    .intro__box {
+        max-width: 279px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
