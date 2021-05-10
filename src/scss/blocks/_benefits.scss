@@ -172,10 +172,9 @@ only screen and (                min-resolution: 2dppx) {
 
         &::before {
             max-width: 710px;
-            max-height: 573px;
             background-position: center;
             top: -56px;
-            left: 40px;
+            left: 0;
             position: absolute;
             z-index: 0;
         }
@@ -279,10 +278,10 @@ only screen and (                min-resolution: 2dppx) {
 
         &::before {
             max-width: 327px;
-            min-height: 902px;
+            height: 902px;
             background-position: center;
             top: -64px;
-            left: 24px;
+            left: 0;
             position: absolute;
             z-index: 0;
         }
@@ -317,13 +316,14 @@ only screen and (                min-resolution: 2dppx) {
 
     .benefits__item-title {
         font-size: 24px;
+        width: 255px;
         line-height: 32px;
         margin-bottom: 24px;
     }
 
     .benefits__item-text {
         font-size: 16px;
-        width: 212px;
+        width: 255px;
         line-height: 26px;
         text-align: center;
     }
